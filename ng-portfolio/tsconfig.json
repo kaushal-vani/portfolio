@@ -14,6 +14,11 @@
     "declaration": false,
     "experimentalDecorators": true,
     "moduleResolution": "node",
+    "paths": {
+      "portfolio-ui": [
+        "./dist/portfolio-ui"
+      ]
+    },
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
