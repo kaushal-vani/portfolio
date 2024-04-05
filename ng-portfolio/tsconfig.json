@@ -15,6 +15,9 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "paths": {
+      "portfolio-shared": [
+        "./dist/portfolio-shared"
+      ],
       "portfolio-smart": [
         "./dist/portfolio-smart"
       ],

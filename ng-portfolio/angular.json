@@ -68,6 +68,39 @@
           }
         }
       }
+    },
+    "portfolio-shared": {
+      "projectType": "library",
+      "root": "projects/portfolio-shared",
+      "sourceRoot": "projects/portfolio-shared/src",
+      "prefix": "portfolio",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/portfolio-shared/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/portfolio-shared/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/portfolio-shared/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/portfolio-shared/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }
