@@ -1,1 +1,33 @@
-<p>footer works!</p>
+<div class="container">
+  <footer
+    class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+  >
+    <div class="col-md-4 d-flex align-items-center">
+      <a
+        [routerLink]="content.logo.link"
+        class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+        ><img
+          [src]="content.logo.src"
+          width="24"
+          height="24"
+          [alt]="content.logo.alt"
+        />
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">{{ content.footer }}</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      @for (item of content.socialMedia; track $index) {
+      <li class="ms-4">
+        <a class="text-muted" [href]="content.socialMedia[$index].link"
+          ><img
+            width="36"
+            height="36"
+            [src]="content.socialMedia[$index].src"
+            [alt]="content.socialMedia[$index].alt"
+        /></a>
+      </li>
+      }
+    </ul>
+  </footer>
+</div>

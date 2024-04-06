@@ -1,10 +1,17 @@
 export interface Link {
-  title: string;
   link: string;
+  title: string;
 }
 
 export interface Logo {
-  src: string;
   alt: string;
   link?: string;
+  src: string;
+}
+
+export interface SocialMedia {
+  alt: string;
+  description?: string;
+  link: string;
+  src: string;
 }
