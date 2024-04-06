@@ -5,7 +5,7 @@ import { HeroBannerComponent } from 'portfolio-ui/src';
     selector: 'portfolio-home-page',
     standalone: true,
     templateUrl: './home-page.component.html',
-    styleUrl: './home-page.component.css',
+    styleUrl: './home-page.component.scss',
     imports: [HeroBannerComponent]
 })
 export class HomePageComponent {

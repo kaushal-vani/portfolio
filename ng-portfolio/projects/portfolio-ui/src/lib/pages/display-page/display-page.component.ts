@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './display-page.component.html',
-  styleUrl: './display-page.component.css'
+  styleUrl: './display-page.component.scss'
 })
 export class DisplayPageComponent {
 

@@ -5,7 +5,7 @@ import { HomePageComponent } from 'portfolio-ui/src';
     selector: 'portfolio-home',
     standalone: true,
     templateUrl: './home.component.html',
-    styleUrl: './home.component.css',
+    styleUrl: './home.component.scss',
     imports: [HomePageComponent]
 })
 export class HomeComponent {

@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './secondary-nav.component.html',
-  styleUrl: './secondary-nav.component.css'
+  styleUrl: './secondary-nav.component.scss'
 })
 export class SecondaryNavComponent {
 

@@ -5,7 +5,7 @@ import { AboutPageComponent } from 'portfolio-ui/src';
     selector: 'portfolio-about',
     standalone: true,
     templateUrl: './about.component.html',
-    styleUrl: './about.component.css',
+    styleUrl: './about.component.scss',
     imports: [AboutPageComponent]
 })
 export class AboutComponent {

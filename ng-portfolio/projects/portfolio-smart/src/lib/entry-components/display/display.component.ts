@@ -5,7 +5,7 @@ import { DisplayPageComponent } from 'portfolio-ui/src';
     selector: 'portfolio-display',
     standalone: true,
     templateUrl: './display.component.html',
-    styleUrl: './display.component.css',
+    styleUrl: './display.component.scss',
     imports: [DisplayPageComponent]
 })
 export class DisplayComponent {
