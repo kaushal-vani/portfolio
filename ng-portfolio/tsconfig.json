@@ -14,15 +14,16 @@
     "declaration": false,
     "experimentalDecorators": true,
     "moduleResolution": "node",
+    "baseUrl": "projects",
     "paths": {
-      "portfolio-shared": [
-        "./dist/portfolio-shared"
+      "@portfolio-shared/*": [
+        "portfolio-shared/src/lib/*"
       ],
-      "portfolio-smart": [
-        "./dist/portfolio-smart"
+      "@portfolio-smart/*": [
+        "portfolio-smart/src/lib/*"
       ],
-      "portfolio-ui": [
-        "./dist/portfolio-ui"
+      "@portfolio-ui/*": [
+        "portfolio-ui/src/lib/*"
       ]
     },
     "importHelpers": true,
