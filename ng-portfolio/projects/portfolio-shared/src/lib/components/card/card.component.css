@@ -1,0 +1,71 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for the card container */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px; /* Add gap between cards */
+  padding: 20px; /* Adjust padding for spacing */
+}
+
+/* Styles for the card */
+.card {
+  width: 100%; /* Ensure each card takes 100% width within the column */
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the card header (image and title) */
+.card-header {
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-image {
+  max-width: 40px;
+  max-height: 40px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0; /* Remove default margin */
+}
+
+/* Styles for the card content */
+.card-content {
+  padding: 1rem;
+}
+
+/* Styles for the card text */
+.card-text {
+  margin-bottom: 0.5rem;
+}
+
+/* Styles for the small text at the bottom of the card */
+.card-meta {
+  font-size: 0.875rem;
+  color: #888;
+}
+
+/* Media query for larger screens (greater than 660px) */
+@media (min-width: 661px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr)); /* Two cards in a row */
+  }
+}
