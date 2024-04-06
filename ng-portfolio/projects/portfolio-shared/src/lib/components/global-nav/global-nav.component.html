@@ -1,1 +1,49 @@
-<p>global-nav works!</p>
+<nav
+  class="navbar navbar-expand-lg navbar-dark bg-dark"
+  aria-label="Offcanvas navbar large"
+>
+  <div class="container-fluid">
+    <h5 href="#" class="navbar-brand"><img src="assets/GIF/kode.gif" width="24px" height="24px" /> Kaushal.dev</h5>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar2"
+      aria-controls="offcanvasNavbar2"
+    ><img src="assets/Ui-Kit/menu.svg" alt=""></button>
+    <div
+      class="offcanvas offcanvas-end text-bg-dark"
+      tabindex="-1"
+      id="offcanvasNavbar2"
+      aria-labelledby="offcanvasNavbar2Label"
+    >
+      <div class="offcanvas-header">
+        <a class="offcanvas-title" id="offcanvasNavbar2Label"><img src="" /></a>
+        <button
+          class="btn-close btn-close-white"
+          type="button"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+        
+    </button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav nav-underline justify-content-center flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="">Tech Stack</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
