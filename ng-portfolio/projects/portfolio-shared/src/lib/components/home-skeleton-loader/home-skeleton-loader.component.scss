@@ -1,0 +1,51 @@
+/* Customize skeleton loader styles here */
+
+/* Skeleton loader animation */
+.skeleton-animation {
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+/* Custom styles for the skeleton loader elements */
+.page-title-skeleton {
+    height: 40px;
+    width: 70%;
+    margin: 20px auto;
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 4px;
+}
+
+.featured-image-skeleton {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 8px;
+}
+
+.content-skeleton {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 4px;
+}
+
+.cta-button-skeleton {
+    height: 40px;
+    width: 150px;
+    margin-top: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 4px;
+}
