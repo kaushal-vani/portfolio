@@ -3,3 +3,9 @@
 @import url(../../portfolio-shared/src/lib/scss/portfolio-units.scss);
 @import url(../../portfolio-shared/src/lib/scss/portfolio-layout.scss);
 @import url(../../portfolio-shared/src/lib/scss/portfolio-variable.scss);
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
