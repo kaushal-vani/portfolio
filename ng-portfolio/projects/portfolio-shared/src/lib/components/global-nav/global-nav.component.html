@@ -3,14 +3,18 @@
   aria-label="Offcanvas navbar large"
 >
   <div class="container-fluid">
-    <h5 href="#" class="navbar-brand"><img src="assets/GIF/kode.gif" width="24px" height="24px" /> Kaushal.dev</h5>
+    <h4 href="#" class="navbar-brand" [routerLink]="content.logo.link">
+      <img [src]="content.logo.src" alt="{{content.logo.alt}}" width="32px" height="32px" /> {{content.header}}
+    </h4>
     <button
       class="navbar-toggler"
       type="button"
       data-bs-toggle="offcanvas"
       data-bs-target="#offcanvasNavbar2"
       aria-controls="offcanvasNavbar2"
-    ><img src="assets/Ui-Kit/menu.svg" alt=""></button>
+    >
+      <img src="assets/icon-kit/menu.svg" alt="menu" />
+    </button>
     <div
       class="offcanvas offcanvas-end text-bg-dark"
       tabindex="-1"
@@ -18,30 +22,29 @@
       aria-labelledby="offcanvasNavbar2Label"
     >
       <div class="offcanvas-header">
-        <a class="offcanvas-title" id="offcanvasNavbar2Label"><img src="" /></a>
+        <h3 class="offcanvas-title" id="offcanvasNavbar2Label">
+          <img
+            [src]="content.logo.src"
+            width="32px"
+            height="32px"
+          /> {{content.header}}
+        </h3>
         <button
           class="btn-close btn-close-white"
           type="button"
           data-bs-dismiss="offcanvas"
           aria-label="Close"
-        >
-        
-    </button>
+        ></button>
       </div>
       <div class="offcanvas-body">
-        <ul class="navbar-nav nav-underline justify-content-center flex-grow-1 pe-3">
+        <ul
+          class="navbar-nav nav-underline justify-content-center flex-grow-1 pe-3"
+        >
+        @for (item of content.link; track item){
           <li class="nav-item">
-            <a class="nav-link" routerLink="">About</a>
+            <a class="nav-link" [routerLink]="item.link">{{item.title}}</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="">Tech Stack</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="">Contact Me</a>
-          </li>
+        }
         </ul>
       </div>
     </div>
