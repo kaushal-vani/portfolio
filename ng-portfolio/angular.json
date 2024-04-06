@@ -5,6 +5,11 @@
   "projects": {
     "portfolio-ui": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "projects/portfolio-ui",
       "sourceRoot": "projects/portfolio-ui/src",
       "prefix": "portfolio",
@@ -38,6 +43,11 @@
     },
     "portfolio-smart": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "projects/portfolio-smart",
       "sourceRoot": "projects/portfolio-smart/src",
       "prefix": "portfolio",
@@ -71,6 +81,11 @@
     },
     "portfolio-shared": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "projects/portfolio-shared",
       "sourceRoot": "projects/portfolio-shared/src",
       "prefix": "portfolio",
