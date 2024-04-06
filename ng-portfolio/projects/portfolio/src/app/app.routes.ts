@@ -24,6 +24,17 @@ export const routes: Routes = [
     component: DisplayComponent,
   },
   {
+    path: 'contact-me',
+    component: DisplayComponent,
+  },
+  {
+    path: 'projects',
+    component: DisplayComponent,
+  },{
+  path: 'tech-stack',
+  component: DisplayComponent,
+},
+  {
     path: '**',
     component: HomeComponent,
   },
