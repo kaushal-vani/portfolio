@@ -129,7 +129,6 @@
             "tsConfig": "projects/portfolio/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "projects/portfolio/src/favicon.ico",
               "projects/portfolio/src/assets",
               {
                 "glob": "**/*",
@@ -194,7 +193,6 @@
             "tsConfig": "projects/portfolio/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "projects/portfolio/src/favicon.ico",
               "projects/portfolio/src/assets"
             ],
             "styles": ["projects/portfolio/src/styles.scss"],
