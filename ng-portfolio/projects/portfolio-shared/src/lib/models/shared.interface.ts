@@ -1,3 +1,11 @@
+export interface Card {
+  alt: string;
+  description: string;
+  meta: string;
+  src: string;
+  title: string;
+}
+
 export interface Link {
   link: string;
   title: string;
