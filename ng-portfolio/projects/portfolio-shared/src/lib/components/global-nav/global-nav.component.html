@@ -3,8 +3,8 @@
   aria-label="Offcanvas navbar large"
 >
   <div class="container-fluid">
-    <h4 href="#" class="navbar-brand" [routerLink]="content.logo.link">
-      <img [src]="content.logo.src" alt="{{content.logo.alt}}" width="32px" height="32px" /> {{content.header}}
+    <h4 href="#" class="navbar-brand d-flex align-items-center" [routerLink]="content.logo.link">
+      <img [src]="content.logo.src" class="me-2" alt="{{content.logo.alt}}" width="32px" height="32px" /><span>{{content.header}}</span>
     </h4>
     <button
       class="navbar-toggler"
