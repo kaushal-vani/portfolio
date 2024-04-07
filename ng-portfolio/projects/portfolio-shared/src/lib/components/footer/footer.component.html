@@ -18,7 +18,7 @@
 
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
       @for (item of content.socialMedia; track $index) {
-      <a class="text-muted me-4" [href]="content.socialMedia[$index].link"
+      <a class="text-muted me-4" target="_blank" [href]="content.socialMedia[$index].link"
         ><img
           width="36"
           height="36"
