@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+}
+h2,
+h3 {
+  color: #323232;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 10px;
+}
+/* Add this to your existing styles */
+/* Styles for the card container */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px; /* Add gap between cards */
+  padding: 20px; /* Adjust padding for spacing */
+}
+
+/* Styles for the card item */
+.card-item {
+  width: 100%; /* Ensure each card item takes 100% width */
+}
+
+/* Media query for larger screens */
+@media (min-width: 661px) {
+  .card-container {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(300px, 1fr)
+    ); /* Default to one card per row */
+  }
+}
+
+/* Media query for screens larger than 992px (3 cards per row) */
+@media (min-width: 993px) {
+  .card-container {
+    grid-template-columns: repeat(
+      3,
+      minmax(300px, 1fr)
+    ); /* Three cards per row */
+  }
+}
