@@ -1,59 +1,66 @@
-<div class="container py-5">
-  <h2>{{ content.header }}</h2>
-  <p class="lead">{{ content.description }}</p>
-  <div class="row">
-    <div class="col-md-4 mb-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title d-flex align-items-center">
-            <img
-              [src]="content.gmail.src"
-              width="24px"
-              height="24px"
-              [alt]="content.gmail.alt"
-              class="me-2"
-            /><span> {{ content.gmail.alt }}</span>
-          </h5>
-          <p class="card-text" [innerHTML]="getGmailContent()"></p>
-        </div>
-      </div>
+<div class="container">
+<section class="py-5 text-center container">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-light">{{ content.header }}</h1>
+      <p class="lead">{{ content.description }}</p>
     </div>
-    <div class="col-md-4 mb-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title d-flex align-items-center">
-            <img
-              [src]="content.linkedIn.src"
-              width="24px"
-              height="24px"
-              [alt]="content.linkedIn.alt"
-              class="me-2"
-            />
-            {{ content.linkedIn.alt }}
-          </h5>
-          <p class="card-text" [innerHTML]="getLinkedInContent()"></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 mb-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title d-flex align-items-center">
-            <img
-              [src]="content.gitHub.src"
-              width="24px"
-              height="24px"
-              [alt]="content.gitHub.alt"
-              class="me-2"
-            />
-            {{ content.gitHub.alt }}
-          </h5>
-          <p class="card-text" [innerHTML]="getGithubContent()"></p>
-        </div>
+  </div>
+</section>
+
+<div class="row">
+  <div class="col-md-4 mb-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title d-flex align-items-center">
+          <img
+            [src]="content.gmail.src"
+            width="24px"
+            height="24px"
+            [alt]="content.gmail.alt"
+            class="me-2"
+          /><span> {{ content.gmail.alt }}</span>
+        </h5>
+        <p class="card-text" [innerHTML]="getGmailContent()"></p>
       </div>
     </div>
   </div>
-  @if (showEmailForm) {
-  <portfolio-email-form></portfolio-email-form>
-  }
+  <div class="col-md-4 mb-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title d-flex align-items-center">
+          <img
+            [src]="content.linkedIn.src"
+            width="24px"
+            height="24px"
+            [alt]="content.linkedIn.alt"
+            class="me-2"
+          />
+          {{ content.linkedIn.alt }}
+        </h5>
+        <p class="card-text" [innerHTML]="getLinkedInContent()"></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title d-flex align-items-center">
+          <img
+            [src]="content.gitHub.src"
+            width="24px"
+            height="24px"
+            [alt]="content.gitHub.alt"
+            class="me-2"
+          />
+          {{ content.gitHub.alt }}
+        </h5>
+        <p class="card-text" [innerHTML]="getGithubContent()"></p>
+      </div>
+    </div>
+  </div>
+</div>
+@if (showEmailForm) {
+<portfolio-email-form></portfolio-email-form>
+}
 </div>
