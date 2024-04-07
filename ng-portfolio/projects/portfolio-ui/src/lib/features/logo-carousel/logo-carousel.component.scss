@@ -1,13 +1,13 @@
 .container {
   overflow: hidden;
   .slider {
-    animation: slidein 60s linear infinite; /* Increase animation duration for slower speed */
+    animation: slidein 65s linear infinite; /* Increase animation duration for slower speed */
     white-space: nowrap;
     .logos {
       display: flex;
       .logo-container {
         text-align: center;
-        margin-right: 75px; /* Increase margin-right for more spacing */
+        margin-right: 90px; /* Increase margin-right for more spacing */
         .logo-name {
           display: block;
           font-size: 14px;
