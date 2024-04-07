@@ -1,0 +1,57 @@
+<div class="container py-5">
+  <h2>{{ content.header }}</h2>
+  <p class="lead">{{ content.description }}</p>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">
+            <img
+              [src]="content.gmail.src"
+              width="24px"
+              height="24px"
+              [alt]="content.gmail.alt"
+            />
+            {{ content.gmail.alt }}
+          </h5>
+          <p class="card-text" [innerHTML]="getGmailContent()"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">
+            <img
+              [src]="content.linkedIn.src"
+              width="24px"
+              height="24px"
+              [alt]="content.linkedIn.alt"
+            />
+            {{ content.linkedIn.alt }}
+          </h5>
+          <p class="card-text" [innerHTML]="getLinkedInContent()"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">
+            <img
+              [src]="content.gitHub.src"
+              width="24px"
+              height="24px"
+              [alt]="content.gitHub.alt"
+            /> {{content.gitHub.alt}}
+          </h5>
+          <p class="card-text" [innerHTML]="getGithubContent()">
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  @if (showEmailForm) {
+    <portfolio-email-form></portfolio-email-form>
+} 
+</div>
