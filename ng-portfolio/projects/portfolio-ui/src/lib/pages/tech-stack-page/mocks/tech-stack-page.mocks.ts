@@ -67,7 +67,10 @@ const TechStackMocks: Card[] = [
   },
 ];
 
+const TitleMocks: string = "Tech Stack"
+
 const TechStackContentMocks: TechStackContent = {
+  title: TitleMocks,
   techStack: TechStackMocks,
 };
 
