@@ -5,14 +5,14 @@
     <div class="col-md-4 mb-4">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">
+          <h5 class="card-title d-flex align-items-center">
             <img
               [src]="content.gmail.src"
               width="24px"
               height="24px"
               [alt]="content.gmail.alt"
-            />
-            {{ content.gmail.alt }}
+              class="me-2"
+            /><span> {{ content.gmail.alt }}</span>
           </h5>
           <p class="card-text" [innerHTML]="getGmailContent()"></p>
         </div>
@@ -21,12 +21,13 @@
     <div class="col-md-4 mb-4">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">
+          <h5 class="card-title d-flex align-items-center">
             <img
               [src]="content.linkedIn.src"
               width="24px"
               height="24px"
               [alt]="content.linkedIn.alt"
+              class="me-2"
             />
             {{ content.linkedIn.alt }}
           </h5>
@@ -37,21 +38,22 @@
     <div class="col-md-4 mb-4">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">
+          <h5 class="card-title d-flex align-items-center">
             <img
               [src]="content.gitHub.src"
               width="24px"
               height="24px"
               [alt]="content.gitHub.alt"
-            /> {{content.gitHub.alt}}
+              class="me-2"
+            />
+            {{ content.gitHub.alt }}
           </h5>
-          <p class="card-text" [innerHTML]="getGithubContent()">
-          </p>
+          <p class="card-text" [innerHTML]="getGithubContent()"></p>
         </div>
       </div>
     </div>
   </div>
   @if (showEmailForm) {
-    <portfolio-email-form></portfolio-email-form>
-} 
+  <portfolio-email-form></portfolio-email-form>
+  }
 </div>
