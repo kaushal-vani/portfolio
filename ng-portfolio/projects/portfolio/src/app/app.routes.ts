@@ -4,6 +4,7 @@ import {
   ContactComponent,
   DisplayComponent,
   HomeComponent,
+  TechStackComponent,
 } from 'portfolio-smart/src';
 
 export const routes: Routes = [
@@ -21,10 +22,6 @@ export const routes: Routes = [
     component: AboutComponent,
   },
   {
-    path: 'display',
-    component: DisplayComponent,
-  },
-  {
     path: 'contact-me',
     component: ContactComponent,
   },
@@ -33,7 +30,7 @@ export const routes: Routes = [
     component: DisplayComponent,
   },{
   path: 'tech-stack',
-  component: DisplayComponent,
+  component: TechStackComponent,
 },
   {
     path: '**',
