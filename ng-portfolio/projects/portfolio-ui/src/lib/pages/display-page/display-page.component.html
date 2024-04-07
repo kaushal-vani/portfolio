@@ -1,1 +1,22 @@
-<p>display-page works!</p>
+<section class="py-5 text-center container">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-light">{{ content.header }}</h1>
+      <p class="lead text-muted">
+        {{ content.description }}
+      </p>
+      <a [href]="content.gitButton.link" target="_blank" class="btn btn-secondary my-2">
+        <div class="d-flex align-items-center">
+          <img
+            [src]="content.gitButton.imageSrc"
+            width="20px"
+            class="me-2"
+            [alt]="content.gitButton.imageAlt"
+          />
+          <span>{{ content.gitButton.action }}</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
