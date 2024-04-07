@@ -1,3 +1,10 @@
+export interface Button {
+  ariaLabel: string;
+  action: string;
+  imageSrc?: string;
+  imageAlt?: string;
+}
+
 export interface Card {
   alt: string;
   description: string;
