@@ -1,0 +1,23 @@
+<section class="py-5 text-center container">
+  <div class="row ">
+      <h1 class="fw-light">{{content.title}}</h1>
+  </div>
+</section>
+
+<div class="container">
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    @for (item of content.card; track $index) {
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <div class="feature">
+            <img class="feature-icon" [src]="item.src" />
+            <h2 class="card-title">{{ item.title }}</h2>
+            <p class="card-text">{{ item.text }}.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>

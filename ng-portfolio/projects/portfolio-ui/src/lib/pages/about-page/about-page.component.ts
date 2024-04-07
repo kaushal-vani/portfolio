@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { CardComponent } from 'portfolio-shared/src';
+import { AboutPageContentMock } from './mocks/about-page.mocks';
+import { AboutPageContent } from './models/about-page.interface';
 
 @Component({
   selector: 'portfolio-about-page',
@@ -9,5 +11,6 @@ import { CardComponent } from 'portfolio-shared/src';
   imports: [CardComponent],
 })
 export class AboutPageComponent {
+  content: AboutPageContent = AboutPageContentMock
 
 }
