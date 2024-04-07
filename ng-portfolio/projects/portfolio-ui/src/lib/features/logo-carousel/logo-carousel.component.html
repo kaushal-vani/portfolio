@@ -1,0 +1,24 @@
+<div class="container h-100">
+  <div class="row align-items-center h-100">
+    <div class="container rounded">
+      <h4 class="text-center test-muted mb-4 fw-normal">Projects developed using</h4>
+      <div class="slider">
+        <div class="logos">
+          @for (item of content.logo; track $index) {
+            <div class="logo-container">
+              <img [src]="item.src" width="48px"/>
+              <span class="logo-name">{{ item.title }}</span>
+            </div>
+          }
+          <!-- Duplicate logos to create a continuous effect -->
+          @for (item of content.logo; track $index) {
+            <div class="logo-container">
+              <img [src]="item.src" width="48px"/>
+              <span class="logo-name">{{ item.title }}</span>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
