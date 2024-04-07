@@ -23,6 +23,7 @@ export interface Logo {
   alt: string;
   link?: string;
   src: string;
+  title?: string;
 }
 
 export interface SocialMedia {
