@@ -3,6 +3,7 @@ export interface Button {
   action: string;
   imageSrc?: string;
   imageAlt?: string;
+  link?: string;
 }
 
 export interface Card {
