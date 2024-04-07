@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import {
   AboutComponent,
+  ContactComponent,
   DisplayComponent,
   HomeComponent,
 } from 'portfolio-smart/src';
@@ -25,7 +26,7 @@ export const routes: Routes = [
   },
   {
     path: 'contact-me',
-    component: DisplayComponent,
+    component: ContactComponent,
   },
   {
     path: 'projects',
