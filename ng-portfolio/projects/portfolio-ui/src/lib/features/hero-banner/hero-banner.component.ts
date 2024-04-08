@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class HeroBannerComponent {
   downloadResume() {
     // Replace 'path/to/your/resume.pdf' with the actual path to your resume file
-    const resumeUrl = 'assets/Resume/dummy.pdf';
+    const resumeUrl = 'assets/Resume/Kaushal_Resume.pdf';
 
     // Create a temporary anchor element
     const link = document.createElement('a');
