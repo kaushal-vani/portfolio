@@ -1,3 +1,9 @@
 .textColor {
   color: #0047ab;
 }
+
+.toast-body {
+  display: flex;
+  flex-direction: row; /* or row, depending on your layout */
+  justify-content: space-between;
+}

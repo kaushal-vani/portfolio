@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, PLATFORM_ID, Inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+declare const bootstrap: any;
 import { DownloadResumeService } from '@portfolio-shared/services/download-resume.service';
 
 @Component({
@@ -6,14 +8,26 @@ import { DownloadResumeService } from '@portfolio-shared/services/download-resum
   standalone: true,
   imports: [],
   templateUrl: './hero-banner.component.html',
-  styleUrl: './hero-banner.component.scss'
+  styleUrl: './hero-banner.component.scss',
 })
-export class HeroBannerComponent {
+export class HeroBannerComponent implements AfterViewInit {
+  constructor(private downloadResumeService: DownloadResumeService , @Inject(PLATFORM_ID) private platformId: Object) {}
 
-  constructor(private downloadResumeService: DownloadResumeService){}
-
-  resumeDownload(){
-    this.downloadResumeService.downloadResume()
+  resumeDownload() {
+    this.downloadResumeService.downloadResume();
   }
 
+  ngAfterViewInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      const toastTrigger = document.getElementById('liveToastBtn');
+      const toastLiveExample = document.getElementById('liveToast');
+
+      if (toastTrigger) {
+        const toastBootstrap = new bootstrap.Toast(toastLiveExample);
+        toastTrigger.addEventListener('click', () => {
+          toastBootstrap.show();
+        });
+      }
+    }
+  }
 }

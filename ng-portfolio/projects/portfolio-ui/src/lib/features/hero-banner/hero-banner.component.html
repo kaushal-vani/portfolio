@@ -19,6 +19,7 @@
       </p>
       <div class="d-grid gap-2 d-sm-flex justify-content-center">
         <button
+          id="liveToastBtn"
           type="button"
           class="btn btn-outline-dark btn-lg px-4"
           (click)="resumeDownload()"
@@ -27,6 +28,26 @@
           Download Resume
         </button>
       </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div
+    id="liveToast"
+    class="toast"
+    role="alert"
+    aria-live="assertive"
+    aria-atomic="true"
+  >
+    <div class="toast-header">
+      <img src="assets/icon-kit/folder.svg" class="rounded me-2" alt="..." />
+      <strong class="me-auto">Kaushal.dev</strong>
+      <small>Just Now</small>
+    </div>
+    <div class="toast-body">
+      Resume downloaded successfully
+      <img src="assets/icon-kit/check-success.svg" width="18px" />
     </div>
   </div>
 </div>
