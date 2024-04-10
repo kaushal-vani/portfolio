@@ -5,7 +5,11 @@
       <p class="lead text-muted">
         {{ content.description }}
       </p>
-      <a [href]="content.gitButton.link" target="_blank" class="btn btn-secondary my-2">
+      <a
+        [href]="content.gitButton.link"
+        target="_blank"
+        class="btn btn-secondary my-2"
+      >
         <div class="d-flex align-items-center">
           <img
             [src]="content.gitButton.imageSrc"
@@ -19,5 +23,6 @@
     </div>
   </div>
 </section>
-<portfolio-logo-carousel></portfolio-logo-carousel>
-
+<div class="d-none d-lg-block">
+  <portfolio-logo-carousel></portfolio-logo-carousel>
+</div>
