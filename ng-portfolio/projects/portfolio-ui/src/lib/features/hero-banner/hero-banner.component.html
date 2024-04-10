@@ -8,7 +8,9 @@
         width="72"
         height="72"
       />
-      <h1 class="display-4 fw-bold">Hello. I am Kaushal</h1>
+      <h1 class="display-4 fw-bold">
+        <span class="textColor">Hello.</span> I am Kaushal
+      </h1>
       <p class="lead mb-4">
         I'm a passionate front-end developer dedicated to creating immersive
         digital experiences. With a blend of creativity and technical expertise,
@@ -16,8 +18,12 @@
         interactions.
       </p>
       <div class="d-grid gap-2 d-sm-flex justify-content-center">
-        <button type="button" class="btn btn-outline-dark btn-lg px-4" (click)="resumeDownload()">
-            <img src="assets/icon-kit/download.svg">
+        <button
+          type="button"
+          class="btn btn-outline-dark btn-lg px-4"
+          (click)="resumeDownload()"
+        >
+          <img src="assets/icon-kit/download.svg" />
           Download Resume
         </button>
       </div>
