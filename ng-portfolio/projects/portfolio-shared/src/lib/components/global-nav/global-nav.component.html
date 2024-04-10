@@ -3,8 +3,18 @@
   aria-label="Offcanvas navbar large"
 >
   <div class="container-fluid">
-    <h4 href="#" class="navbar-brand d-flex align-items-center" [routerLink]="content.logo.link">
-      <img [src]="content.logo.src" class="me-2" alt="{{content.logo.alt}}" width="32px" height="32px" /><span>{{content.header}}</span>
+    <h4
+      href="#"
+      class="navbar-brand d-flex align-items-center"
+      [routerLink]="content.logo.link"
+    >
+      <img
+        [src]="content.logo.src"
+        class="me-2"
+        alt="{{ content.logo.alt }}"
+        width="32px"
+        height="32px"
+      /><span>{{ content.header }}</span>
     </h4>
     <button
       class="navbar-toggler"
@@ -22,12 +32,13 @@
       aria-labelledby="offcanvasNavbar2Label"
     >
       <div class="offcanvas-header">
-        <h3 class="offcanvas-title" id="offcanvasNavbar2Label" [routerLink]="content.logo.link">
-          <img
-            [src]="content.logo.src"
-            width="32px"
-            height="32px"
-          /> {{content.header}}
+        <h3
+          class="offcanvas-title"
+          id="offcanvasNavbar2Label"
+          [routerLink]="content.logo.link"
+        >
+          <img [src]="content.logo.src" width="32px" height="32px" />
+          {{ content.header }}
         </h3>
         <button
           class="btn-close btn-close-white"
@@ -40,11 +51,16 @@
         <ul
           class="navbar-nav nav-underline justify-content-center flex-grow-1 pe-3"
         >
-        @for (item of content.link; track item){
+          @for (item of content.link; track item){
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="item.link">{{item.title}}</a>
+            <a
+              class="nav-link"
+              data-bs-dismiss="offcanvas"
+              [routerLink]="item.link"
+              >{{ item.title }}</a
+            >
           </li>
-        }
+          }
         </ul>
       </div>
     </div>
