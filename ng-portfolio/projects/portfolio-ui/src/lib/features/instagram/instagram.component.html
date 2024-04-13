@@ -1,0 +1,20 @@
+<div class="container px-4 py-5" id="custom-cards">
+  <h2 class="pb-2 border-bottom">Instagram Feed</h2>
+
+  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+    <div class="col" *ngFor="let post of instagramFeed">
+      <div class="card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+        <img class="card-img-top" [src]="post.media_url" [alt]="post.caption" />
+        <div class="card-body d-flex justify-content-between">
+          <h5 class="card-title">{{ post.caption }}</h5>
+          <img
+            src="assets/icon-kit/instagram.svg"
+            alt="Thumbnail"
+            width="32"
+            height="32"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
