@@ -3,6 +3,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 import { InstagramService } from 'portfolio-shared/src';
+import { InstagramContent } from './models/instagram.interfaces';
+import { InstagramContentMocks } from './mocks/instagram.mocks';
 
 @Component({
   selector: 'portfolio-instagram',
@@ -12,6 +14,7 @@ import { InstagramService } from 'portfolio-shared/src';
   styleUrl: './instagram.component.scss',
 })
 export class InstagramComponent implements OnInit {
+  content: InstagramContent = InstagramContentMocks;
   instagramFeed: any[] = [];
 
   constructor(private instagramService: InstagramService) {}
