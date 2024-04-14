@@ -5,6 +5,7 @@ export * from './lib/features/contact-me/contact-me.component';
 export * from './lib/features/hero-banner/hero-banner.component';
 export * from './lib/features/instagram/instagram.component';
 export * from './lib/features/logo-carousel/logo-carousel.component';
+export * from './lib/features/project/project.component';
 
 //Pages
 export * from './lib/pages/about-page/about-page.component';
