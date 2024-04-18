@@ -1,5 +1,5 @@
 export interface Button {
-  ariaLabel: string;
+  ariaLabel?: string;
   action: string;
   imageSrc?: string;
   imageAlt?: string;
@@ -31,4 +31,8 @@ export interface SocialMedia {
   description?: string;
   link: string;
   src: string;
+}
+export interface Badge {
+  class: string;
+  content: string;
 }
