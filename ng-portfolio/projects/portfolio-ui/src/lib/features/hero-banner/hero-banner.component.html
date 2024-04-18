@@ -3,19 +3,16 @@
     <div class="col-md-6 text-center">
       <img
         class="mb-4"
-        src="assets/Logo/coding.svg"
-        alt=""
+        [src]="content.heroBannerImage.src"
+        [alt]="content.heroBannerImage.alt"
         width="72"
         height="72"
       />
       <h1 class="display-4 fw-bold">
-        <span class="textColor">Hello.</span> I am Kaushal
+        <span class="textColor">Hello.</span>{{ content.title }}
       </h1>
       <p class="lead mb-4">
-        I'm a passionate front-end developer dedicated to creating immersive
-        digital experiences. With a blend of creativity and technical expertise,
-        I bring ideas to life through captivating user interfaces and seamless
-        interactions.
+        {{ content.description }}
       </p>
       <div class="d-grid gap-2 d-sm-flex justify-content-center">
         <button
@@ -24,8 +21,11 @@
           class="btn btn-outline-dark btn-lg px-4"
           (click)="resumeDownload()"
         >
-          <img src="assets/icon-kit/download.svg" />
-          Download Resume
+          <img
+            [src]="content.downloadButton.imageSrc"
+            [alt]="content.downloadButton.imageAlt"
+          />
+          {{ content.downloadButton.action }}
         </button>
       </div>
     </div>
@@ -41,13 +41,13 @@
     aria-atomic="true"
   >
     <div class="toast-header">
-      <img src="assets/icon-kit/folder.svg" class="rounded me-2" alt="..." />
-      <strong class="me-auto">Kaushal.dev</strong>
-      <small>Just Now</small>
+      <img [src]="content.toast.src" class="rounded me-2" alt="folder" />
+      <strong class="me-auto">{{ content.toast.title }}</strong>
+      <small>{{ content.toast.meta }}</small>
     </div>
     <div class="toast-body">
-      Resume downloaded successfully
-      <img src="assets/icon-kit/check-success.svg" width="18px" />
+      {{ content.toast.description }}
+      <img [src]="content.toast.alt" alt="check-success" width="18px" />
     </div>
   </div>
 </div>
