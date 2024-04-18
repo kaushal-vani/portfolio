@@ -1,12 +1,11 @@
 <section class="py-5 text-center container">
-  <div class="row ">
-      <h1 class="fw-light">{{content.title}}</h1>
+  <div class="row">
+    <h1 class="fw-light">{{ content.title }}</h1>
   </div>
 </section>
-<div class="card-container">
-  
-    @for (card of content.techStack; track $index) {
-      <div class="card-item">
+<div class="container card-container border-bottom">
+  @for (card of content.techStack; track $index) {
+  <div class="card-item">
     <portfolio-card
       [imageUrl]="card.src"
       [altText]="card.alt"
@@ -16,5 +15,8 @@
     ></portfolio-card>
   </div>
   }
-  </div>
+</div>
+<div class="d-none d-lg-block">
+  <portfolio-logo-carousel></portfolio-logo-carousel>
+</div>
 
