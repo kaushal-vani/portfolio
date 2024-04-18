@@ -28,10 +28,23 @@ export const routes: Routes = [
   {
     path: 'projects',
     component: DisplayComponent,
-  },{
-  path: 'tech-stack',
-  component: TechStackComponent,
-},
+  },
+  {
+    path: 'projects/show-spot',
+    component: DisplayComponent,
+  },
+  {
+    path: 'projects/task-tree',
+    component: DisplayComponent,
+  },
+  {
+    path: 'projects/ui-library',
+    component: DisplayComponent,
+  },
+  {
+    path: 'tech-stack',
+    component: TechStackComponent,
+  },
   {
     path: '**',
     component: HomeComponent,
