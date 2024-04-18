@@ -1,3 +1,5 @@
+import { ProjectPhase } from "@portfolio-shared/types/project-phase.types";
+
 export interface Button {
   ariaLabel?: string;
   action: string;
@@ -34,5 +36,5 @@ export interface SocialMedia {
 }
 export interface Badge {
   class: string;
-  content: string;
+  content: ProjectPhase;
 }
