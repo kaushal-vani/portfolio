@@ -4,8 +4,8 @@ import { CurrentViewService, CURRENT_VIEW } from 'portfolio-shared/src';
 
 @Component({
   selector: 'portfolio-project-overview',
-  templateUrl: './project-overview.component.html',
-  styleUrls: ['./project-overview.component.scss'],
+  templateUrl: './project-overview-page.component.html',
+  styleUrls: ['./project-overview-page.component.scss'],
   standalone: true,
   imports: [CommonModule],
 })
