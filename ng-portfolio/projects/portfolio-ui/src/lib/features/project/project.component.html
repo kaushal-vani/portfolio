@@ -19,7 +19,7 @@
             </p>
             <div class="d-flex justify-content-between align-items-center">
               <span [class]="item.badge.class">{{ item.badge.content }}</span>
-              <a class="view stretched-link" [href]="item.button.link">{{
+              <a class="view stretched-link" (click)="setStorage(item.button.link!)">{{
                 item.button.action
               }}</a>
             </div>

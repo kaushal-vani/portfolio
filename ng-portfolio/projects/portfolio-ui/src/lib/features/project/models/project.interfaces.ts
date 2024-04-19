@@ -6,4 +6,5 @@ export interface GitHubProjectContent {
   image: Logo;
   button: Button;
   badge: Badge;
+  currentView: string;
 }

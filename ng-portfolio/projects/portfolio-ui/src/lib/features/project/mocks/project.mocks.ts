@@ -12,12 +12,13 @@ export const GitHubProjectContentMocks: GitHubProjectContent[] = [
     },
     button: {
       action: 'Explore Show Spot',
-      link: 'projects/show-spot',
+      link: 'show-spot',
     },
     badge: {
       class: 'badge bg-success',
       content: 'Under-Development',
     },
+    currentView: 'show-spot',
   },
   {
     title: 'Task Tree',
@@ -28,12 +29,13 @@ export const GitHubProjectContentMocks: GitHubProjectContent[] = [
     },
     button: {
       action: 'Explore Task Tree',
-      link: 'projects/task-tree',
+      link: 'task-tree',
     },
     badge: {
       class: 'badge bg-warning text-black-50',
       content: 'On-Standby',
     },
+    currentView: 'task-tree',
   },
   {
     title: 'Ui Library',
@@ -44,11 +46,12 @@ export const GitHubProjectContentMocks: GitHubProjectContent[] = [
     },
     button: {
       action: 'Explore Ui Library',
-      link: 'projects/ui-library',
+      link: 'ui-library',
     },
     badge: {
       class: 'badge bg-secondary ',
       content: 'Pre-Development',
     },
+    currentView: 'ui-library',
   },
 ];
