@@ -12,5 +12,12 @@ export * from './lib/components/secondary-nav/secondary-nav.component';
 export * from './lib/models/shared.interface';
 
 //Services
+export * from './lib/services/current-view.service';
 export * from './lib/services/download-resume.service';
 export * from './lib/services/instagram.service';
+
+//Constants
+export * from './lib/constant/current-view.constant';
+
+//Types
+export * from './lib/types/project-phase.types';
