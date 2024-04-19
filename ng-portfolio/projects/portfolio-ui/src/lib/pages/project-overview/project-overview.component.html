@@ -1,0 +1,15 @@
+<div *ngIf="currentView === CURRENT_VIEW.SHOW_SPOT">
+  <p>This is the Show Spot view.</p>
+</div>
+
+<div *ngIf="currentView === CURRENT_VIEW.TASK_TREE">
+  <p>This is the Task Tree view.</p>
+</div>
+
+<div *ngIf="currentView === CURRENT_VIEW.UI_LIBRARY">
+  <p>This is the UI Library view.</p>
+</div>
+
+<div *ngIf="currentView === CURRENT_VIEW.NONE || currentView === ''">
+  <p>No view selected.</p>
+</div>
