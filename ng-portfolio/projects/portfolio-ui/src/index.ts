@@ -13,5 +13,5 @@ export * from './lib/pages/about-page/about-page.component';
 export * from './lib/pages/contact-page/contact-page.component';
 export * from './lib/pages/display-page/display-page.component';
 export * from './lib/pages/home-page/home-page.component';
-export * from './lib/pages/project-overview/project-overview.component';
+export * from './lib/pages/project-overview-page/project-overview-page.component';
 export * from './lib/pages/tech-stack-page/tech-stack-page.component';
