@@ -6,6 +6,7 @@ import {
   HomeComponent,
   TechStackComponent,
 } from 'portfolio-smart/src';
+import { ProjectOverviewComponent } from 'portfolio-ui/src';
 
 export const routes: Routes = [
   {
@@ -31,15 +32,15 @@ export const routes: Routes = [
   },
   {
     path: 'projects/show-spot',
-    component: DisplayComponent,
+    component: ProjectOverviewComponent,
   },
   {
     path: 'projects/task-tree',
-    component: DisplayComponent,
+    component: ProjectOverviewComponent,
   },
   {
     path: 'projects/ui-library',
-    component: DisplayComponent,
+    component: ProjectOverviewComponent,
   },
   {
     path: 'tech-stack',
