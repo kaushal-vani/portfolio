@@ -6,11 +6,12 @@ export * from './lib/features/hero-banner/hero-banner.component';
 export * from './lib/features/instagram/instagram.component';
 export * from './lib/features/logo-carousel/logo-carousel.component';
 export * from './lib/features/project/project.component';
-export * from './lib/features/project-overview/project-overview.component';
+
 
 //Pages
 export * from './lib/pages/about-page/about-page.component';
 export * from './lib/pages/contact-page/contact-page.component';
 export * from './lib/pages/display-page/display-page.component';
 export * from './lib/pages/home-page/home-page.component';
+export * from './lib/pages/project-overview/project-overview.component';
 export * from './lib/pages/tech-stack-page/tech-stack-page.component';
